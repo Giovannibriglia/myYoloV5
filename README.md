@@ -6,7 +6,18 @@ The system was designed to be adopted in the ERC (European Rover Challenge) race
 
 The system identifies the billboards placed inside the race track and returns an estimate of the relative distance between the rover and the recognized object.
 
-The map of the race track will be known a few weeks before the start of the race; exploiting this aspect, it is possible to cross the data obtained through the algorithm (which are a good estimate), those of the map (known and precise) and those obtained through the odometry system already designed by the team, to obtain a precise and effective location .
+The map of the race track will be known a few weeks before the start of the race; exploiting this aspect, it is possible to cross the data obtained through the algorithm (which are a good estimate), those of the map (known and precise) and those obtained through the odometry system already designed by the team, to obtain a precise and effective location.
+
+HOW TO USE IN GOOGLE COLAB:
+- System needs a csv file with coordinates of boxes, so you can use "makesense.ai" --> object detection --> upload images --> label name: from 0 to 15, using label 0 for box, where number box not identifiable --> export annotation --> csv file --> saving name = coord.csv;
+- Every images used in previous step must be insert in a zipfile --> input_data.zip;
+- Run "SETUP" section;
+- Upload out of folders csv file, zip file, custom_data.yaml (in this repository);
+- Upload in yolov5, my_detect.py;
+- Initialize the parameters;
+- Run every section.
+
+
 
 
 
