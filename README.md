@@ -8,10 +8,5 @@ The system identifies the billboards placed inside the race track and returns an
 
 The map of the race track will be known a few weeks before the start of the race; exploiting this aspect, it is possible to cross the data obtained through the algorithm (which are a good estimate), those of the map (known and precise) and those obtained through the odometry system already designed by the team, to obtain a precise and effective location .
 
-The system presented wants to input:
-- images (clean);
-- csv with the coordinates of the boxes for object detection (use makesense.ai → object detection);
-
-To be finished.............
 
 
